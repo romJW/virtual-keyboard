@@ -1,0 +1,89 @@
+@font-face {
+  font-family: teddy;
+  font-display: swap;
+  src: url("../fonts/teddy-bear.woff2") format("woff2"), url("../fonts/teddy-bear.woff") format "woff";
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: sunday;
+  font-display: swap;
+  src: url("../fonts/sunday.woff2") format("woff2"), url("../fonts/sunday.woff") format "woff";
+  font-weight: 400;
+  font-style: normal;
+}
+.keyboard {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 0;
+  background-color: rgba(195, 224, 224, 0.993);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  user-select: none;
+  transition: bottom 0.4s;
+}
+
+.keyboard__keys {
+  text-align: center;
+}
+
+.keyboard__key {
+  height: 45px;
+  width: 6%;
+  max-width: 90px;
+  margin: 3px;
+  border-radius: 4px;
+  border: none;
+  background: #5393b6;
+  color: black;
+  font-size: 25px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: top;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+
+.keyboard__key:active {
+  background-color: #64bf78;
+}
+
+.keyboard__key-medium {
+  width: 8%;
+  max-width: 165px;
+}
+
+.keyboard__key-middle {
+  width: 10%;
+  max-width: 190px;
+}
+
+.keyboard__key-wide {
+  width: 12%;
+  max-width: 330px;
+}
+
+.keyboard__key-extra-wide {
+  width: 36%;
+  max-width: 500px;
+}
+
+.keyboard__key-activatable {
+  background-color: #64bf78;
+  border-radius: 20px;
+}
+
+.keyboard-hidden {
+  bottom: -100%;
+}
+
+.use-keyboard-input {
+  position: absolute;
+  top: 130px;
+  right: 30px;
+  width: 300px;
+}
